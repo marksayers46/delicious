@@ -1,8 +1,16 @@
+import { useState, useEffect } from "react";
 
 const Veggie = () => {
+
+  const [veggie, setveggie] = useState([]);
+
+  const getVeggie = async () => {
+    const api = await fetch(``)
+  } 
+  
   return (
     <div>
-        <h1>Veggie</h1>
+      
     </div>
   )
 }
