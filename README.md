@@ -15,3 +15,4 @@
 3. React-Icons
 4. React-Router
 5. Styled-Components
+6. React-Splide
