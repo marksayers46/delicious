@@ -4,8 +4,8 @@ import Popular from "../components/Popular";
 const Home = () => {
   return (
     <div>
-        <Veggie />
         <Popular />
+        <Veggie />
     </div>
   )
 }
