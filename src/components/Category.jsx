@@ -12,20 +12,20 @@ const List = styled.div`
 const Category = () => {
   return (
     <List>
-        <NavLink>
-            <FaPizzaSlice />
+        <NavLink to={'/cuisine/Italian'}>
+            <FaPizzaSlice className='icon'/>
             <h4>Italian</h4>
         </NavLink>
-        <NavLink>
-            <FaHamburger />
+        <NavLink to={'/cuisine/American'}>
+            <FaHamburger className='icon' />
             <h4>American</h4>
         </NavLink>
-        <NavLink>
-            <GiNoodles />
+        <NavLink to='/cuisine/Thai'>
+            <GiNoodles className='icon' />
             <h4>Thai</h4>
         </NavLink>
-        <NavLink>
-            <GiChopsticks />
+        <NavLink to='/cuisine/Japanese'>
+            <GiChopsticks className='icon' />
             <h4>Japanese</h4>
         </NavLink>
     </List>

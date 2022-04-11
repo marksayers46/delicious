@@ -25,3 +25,9 @@ h3 {
 a {
   color: rgba(56,56,56);
 }
+
+.icon {
+  border: 1px solid red;
+  border-radius: 50%;
+  font-size: 2rem;
+}
