@@ -7,10 +7,7 @@ import '@splidejs/react-splide/css';
 const Veggie = () => {
   const [veggie, setVeggie] = useState([]);
 
-  useEffect(() => {
-    getVeggie()
-  }, []);
-
+  
   const getVeggie = async () => {
     const check = localStorage.getItem('veggie');
 
@@ -25,6 +22,11 @@ const Veggie = () => {
       console.log(data);
       } 
   }
+
+  useEffect(() => {
+    getVeggie()
+  }, []);
+
   
   return (
     <div>

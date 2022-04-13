@@ -7,10 +7,6 @@ import '@splidejs/react-splide/css';
 const Popular = () => {
   const [popular, setPopular] = useState([]);
 
-  useEffect(() => {
-    getPopular()
-  }, []);
-
   const getPopular = async () => {
     const check = localStorage.getItem('popular');
 
@@ -25,6 +21,10 @@ const Popular = () => {
       console.log(data);
       } 
   };
+
+  useEffect(() => {
+    getPopular()
+  }, []);
 
   return (
     <div>
