@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <GiKnifeFork className="logo"/>
+        <GiKnifeFork className="logo" />
         <Search />
         <Category />
         <Pages />
