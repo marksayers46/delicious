@@ -12,7 +12,7 @@ const Pages = () => {
           <Route path="/" element={<Home />} />
           <Route path="/cuisine/:type" element={<Cuisine />} />
           <Route path="/searched/:search" element={<Searched />} />
-          <Route path="/recipe/:choice" element={<Recipe />} />
+          <Route path="/recipe/:name" element={<Recipe />} />
       </Routes>
   )
 }
