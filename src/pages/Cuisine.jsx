@@ -27,7 +27,7 @@ const Cuisine = () => {
         {cuisine.map((item) => {
             return(
                 <Card key={item.id}>
-                    <Link to={'/recipe/' + cuisine.id}>
+                    <Link to={'/recipe/' + item.id}>
                         <img src={item.image} alt="" />
                         <h4>{item.title}</h4>
                     </Link>
