@@ -19,7 +19,7 @@ const Recipe = () => {
    
     
   return (
-    <detailWrapper>  
+    <DetailWrapper>  
         <div>
             <h2>{details.title}</h2>
             <img src={details.image} alt="" />
@@ -28,13 +28,13 @@ const Recipe = () => {
             <Button>Instructions</Button>
             <Button>Ingredients</Button>
         </Info>
-    </detailWrapper>
+    </DetailWrapper>
     
   )
 }
 
 
-const detailWrapper = styled.div`
+const DetailWrapper = styled.div`
     margin-top: 10rem;
     margin-bottom: 5rem;
     display: flex;
@@ -70,5 +70,6 @@ const Button = styled.button`
 const Info = styled.div`
     margin-left: 10rem;
 `;
+
 
 export default Recipe;
