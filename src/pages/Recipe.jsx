@@ -5,6 +5,7 @@ import { useParams } from 'react-router-dom';
 
 const Recipe = () => {
     const [details, setDetails] = useState({});
+    const [activeTab, setActiveTab] = useState("instructions")
     const params = useParams();
 
     const fetchDetails = async () => {
@@ -25,8 +26,21 @@ const Recipe = () => {
             <img src={details.image} alt="" />
         </div>
         <Info>
-            <Button>Instructions</Button>
-            <Button>Ingredients</Button>
+            <Button className={activeTab === "instructions" ? "active" : ""} onClick={() => setActiveTab("instructions")}>Instructions</Button>
+            <Button className={activeTab === "igredients" ? "active" : ""} onClick={() => setActiveTab("ingredients")}>Ingredients</Button>
+            {activeTab === "instructions" && (
+                <div>
+                <h3 dangerouslySetInnerHTML={{__html: details.summary}}></h3>
+                <h3 dangerouslySetInnerHTML={{__html: details.instructions}}></h3>
+            </div>
+            )}
+            {activeTab === "ingredients" && (
+                <ul>
+                {details.extendedIngredients.map((ingredient) => (
+                <li key={ingredient.id}>{ingredient.original}</li>))}
+                
+            </ul>
+            )}
         </Info>
     </DetailWrapper>
     
