@@ -23,7 +23,7 @@ function App() {
 
 
 const Nav = styled.nav`
-  padding: 4rem 0rem;
+  padding: 2rem 0rem;
   display: flex;
   justify-content: flex-start;
   align-items: center;
